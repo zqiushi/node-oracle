@@ -1,8 +1,5 @@
 FROM golang:1.13.11
 
-# Required for building the Oracle DB driver
-ADD oci8.pc /usr/lib/pkgconfig/oci8.pc
-
 # Install Oracle Client (all commands in one RUN to save image size)
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	unzip \
