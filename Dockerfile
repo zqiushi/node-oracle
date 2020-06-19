@@ -1,4 +1,4 @@
-FROM golang:1.13.11
+FROM node:8.9.1-alpine
 
 # Install Oracle Client (all commands in one RUN to save image size)
 RUN apt-get update && apt-get install -y --no-install-recommends \
